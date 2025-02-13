@@ -535,7 +535,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
 .modal {
@@ -745,15 +744,18 @@ p {
 .exit:focus .exit-icon {
     fill: #FFFFFF;
 }
+
 /* media */
-@media screen and (min-width:320px){
+@media screen and (min-width:320px) and (max-width:767px){
 .container {
-      max-width: 480px;
-      margin: 0;
+      max-width: 320px;
+      margin: left;
+      margin: right;
+      padding-left: 16px;
+      padding-right: 16px;
+      
    } 
-.for-mobile{
-    display: none;
-}
+
 .feature{
     display: none;
 }
@@ -794,3 +796,64 @@ gap: 72px;
     justify-content: center;
     gap: 48px;
 }
+.logo{
+    font-weight: 700;
+    font-size:18px ;
+}
+.logo-footer{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size:18px;
+}
+.footer-container{
+    flex-wrap: wrap;
+    gap: 72px;
+}
+.social-media-footer{
+    margin: 0;
+}
+.sub-label{
+    margin: 0;
+}
+.social-media-footer{
+    text-align: center;
+    margin-left: 40px;
+}
+.input-label{
+    text-align: center;
+}
+.input-sub{
+    width: 288px;
+}
+.button-sub{
+    display: flex;
+    justify-content: center;
+    margin-left:0 ;
+}
+.input-modal{
+    width: 240px;
+}
+.textarea-modal{
+    width: 240px;
+}
+.modal-hero{
+    margin-left: 16px;
+    margin-right: 16px;
+    
+}
+.modal{
+    height: 623px;
+      width: 288px;
+}
+.checkbox-container{
+    width: 240px;
+}
+.nav-page{
+    display: none;
+}
+.address-container{
+    display: none;
+}
+}
+@media screen and (min-width:768px)
