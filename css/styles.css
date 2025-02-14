@@ -48,7 +48,9 @@ p {
     line-height: 1.5;
     /* header */
 }
-
+.exit-mobile {
+    display: none;
+}
 .logo {
     text-decoration: none;
     color: var(--title-text-color);
@@ -522,7 +524,9 @@ p {
     width: 264px;
     margin-top: 16px;
 }
-
+.test{
+    margin-left: 80px;
+}
 /* modal */
 .modal-overlay {
     position: fixed;
@@ -744,6 +748,9 @@ p {
 .exit:focus .exit-icon {
     fill: #FFFFFF;
 }
+.mobile-menu{
+    display: none;
+}
 
 /* media */
 @media screen and (min-width:320px) and (max-width:767px){
@@ -832,10 +839,13 @@ gap: 72px;
     margin-left:0 ;
 }
 .input-modal{
-    width: 240px;
+    max-width: 240px;
+    width: 100%;
 }
 .textarea-modal{
-    width: 240px;
+    max-width: 240px;
+    width: 100%;
+
 }
 .modal-hero{
     margin-left: 16px;
@@ -854,6 +864,83 @@ gap: 72px;
 }
 .address-container{
     display: none;
+}
+.test{
+    margin: 0;
+}
+.button-mobile{
+    border-color: transparent;
+    background-color:white ;
+}
+.button-mobile-container{
+    margin-left: auto;
+}
+.mobile-menu{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;   
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-left: 16px;
+    padding-right: 24px;
+}
+.menu-exit{
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E7E9FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-exit-container{
+    display: flex;
+    justify-content: end;
+   margin-right: auto;
+   margin-top: 24px;
+}
+.menu-ul{
+    display: flex;
+        flex-direction: column;
+    gap: 40px;
+    margin-top: 24px;
+}
+.menu-nav{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-decoration: none;
+    color: var(--title-text-color);
+}
+.menu-nav:active{
+    color: rgba(64, 75, 191, 1);
+}
+.menu-link{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: rgba(67, 68, 85, 1);
+    font-family: "roboto", sans-serif;
+    font-style: normal;
+}
+.menu-link:active{
+color:rgba(64, 75, 191, 1) ;
+}
+.address-menu{
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-set-gap);
+margin-top:168px;
+}
+.menu-social{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
 }
 }
 @media screen and (min-width:768px)
