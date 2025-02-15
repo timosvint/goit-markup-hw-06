@@ -1047,7 +1047,8 @@ gap: 72px;
                 }
         .modal {
                 width: 408px;
-                height: 584px;
+                max-height: 584px;
+                height: 100%;
             }
                         .feature {
                             display: none;
