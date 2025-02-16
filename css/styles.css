@@ -189,6 +189,14 @@ p {
         url(../image/people-office-1.jpg);
     ;
 }
+        @media (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            .hero-section {
+                background-image: url(/image-2x/people-officex2.jpg);
+                 background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(/image-2x/people-officex2.jpg);
+            }
+        }
 .hero-container {
     align-items: center;
     text-align: center;
