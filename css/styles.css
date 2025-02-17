@@ -906,8 +906,6 @@ gap: 72px;
             padding-left: 16px;
             padding-right: 24px;
             z-index: 998;
-            opacity: 0;
-            pointer-events: none;
         }
         .menu-exit {
             border-radius: 50%;
