@@ -876,10 +876,8 @@ gap: 72px;
         
                 .modal {
                 
-                    max-height: 623px;
-                    height: 100%;
+                  height: 623px;
                     width: 288px;
-                    overflow-y:auto ;
                 }
         .feature {
             display: none;
