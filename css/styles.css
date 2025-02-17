@@ -548,7 +548,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
 
 .modal {
     background-color: #FFFFFF;
@@ -873,8 +875,11 @@ gap: 72px;
                 }
         
                 .modal {
-                    height: 623px;
+                
+                    max-height: 623px;
+                    height: 100%;
                     width: 288px;
+                    overflow-y:auto ;
                 }
         .feature {
             display: none;
@@ -902,8 +907,9 @@ gap: 72px;
             padding-left: 16px;
             padding-right: 24px;
             z-index: 998;
+            opacity: 0;
+            pointer-events: none;
         }
-    
         .menu-exit {
             border-radius: 50%;
             background-color: #FFFFFF;
@@ -1054,7 +1060,9 @@ gap: 72px;
                 }
         .modal {
                 width: 408px;
-                height: 584px;
+                max-height: 584px;
+                height: 100%;
+                overflow-y:AUTO ;
             }
                         .feature {
                             display: none;
