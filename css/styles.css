@@ -875,8 +875,9 @@ gap: 72px;
                 }
         
                 .modal {
-                
-                  height: 623px;
+                    overflow-y: auto;
+                  max-height: 623px;
+                  height: 100%;
                     width: 288px;
                 }
         .feature {
@@ -1061,6 +1062,7 @@ gap: 72px;
                 max-height: 584px;
                 height: 100%;
                 overflow-y:AUTO ;
+                z-index: 998;
             }
                         .feature {
                             display: none;
